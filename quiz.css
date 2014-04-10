@@ -1,0 +1,268 @@
+body{font-family: 'Aaargh';
+background-image:url('cup.jpg');
+}
+
+header{width:100%;
+	height:75px;
+}
+
+h1{margin-top:6px;
+   font-size:3em;
+   color:#000;
+   background:#FF8500;
+   width:100%;
+}
+
+h2{font-size:1.1em;
+  color:#ff7400;
+  margin-top:68px;
+}
+
+h1, h2{text-align:center;      
+}
+
+ul{list-style-type:none;    	
+}
+
+
+li .options{
+	display:block;
+	margin: 0 auto;
+	background:#ff7400;
+	border-radius:10px;
+	width:260px;
+	height:55px;
+	margin-bottom:15px;	
+	font-size:2em;
+	font-family:'Aaargh';
+	text-align:center; 
+	border:none;
+}
+
+li .options:hover{
+    background:#fa5;
+    color:#2F3435; 
+}
+
+input:disabled{
+	color:#000;
+}
+
+li input p{color:#000;}
+
+li, input:focus{outline:0;}
+
+/*Answers Dimensions*/
+div.right_answer, .right_answer2, 
+.right_answer3, .right_answer4, 
+.right_answer5{
+	width:260px;
+	height:260px;
+	border-radius: 10px;
+    padding: 0.50%;
+	margin-top:0px;
+	display:none;
+	background:#574D46;
+	position:absolute;
+	top:184px;
+	right:9%;	
+}
+
+div.right_answer span{font-size:1.3em; color:rgb(255, 163, 0);}
+div.right_answer2 span{font-size:1.3em; color:rgb(255, 163, 0);}
+div.right_answer3 span{font-size:1.3em; color:rgb(255, 163, 0);}
+div.right_answer4 span{font-size:1.3em; color:rgb(255, 163, 0);}
+div.right_answer5 span{font-size:1.3em; color:rgb(255, 163, 0);}
+
+/*Hide Sections*/
+section .questions2, .questions3
+.questions4, .questions5{
+	display:none;
+}
+
+div.right_answer, .right_answer2, .right_answer3,
+.right_answer4, .right_answer5, span {
+    font-size:1em;
+    text-align:center;
+}
+
+div.right_answer, .right_answer2, .right_answer3,
+.right_answer4, .right_answer5 p{
+	color:#fff;
+}
+
+div.wrong_answer{height:184px;
+	position:absolute;
+	right:8%;
+	top:180px;
+	display:none;
+}
+
+
+div.wrong_answer p{
+	margin-top:10px;
+	font-size: 2.2em;
+	color:#fff;
+	line-height:0em;
+}
+
+div.wrong_answer img{
+	background-repeat: no-repeat;
+	width:135px;
+	height:135px;
+	position:relative;
+    left:60px;
+}
+
+input.next, .next2, .next3, 
+.next4, .next5 {
+	background:#2F3435;
+	color:#C57C0E;
+	position:absolute;
+	top:467px;
+	right:10%;
+	font-size:2em;
+	line-height:1.75em;
+	padding: 0 0.50%;
+	border-radius:10px;
+	font-family:'Aaargh';
+	display:none;
+	border:none;
+}
+
+input.next:hover{box-shadow:0px 4px 0 #C57C0E;}
+input.next2:hover{box-shadow:0px 4px 0 #C57C0E;}
+input.next3:hover{box-shadow:0px 4px 0 #C57C0E;}
+input.next4:hover{box-shadow:0px 4px 0 #C57C0E;}
+input.next5:hover{box-shadow:0px 4px 0 #C57C0E;}
+
+div.winner{
+	display:none;
+	background:#2F3435;
+	color:orange;
+	width: 300px;
+    height: 120px;
+	margin:0 auto;
+	border-radius:10px;
+	text-align:center;
+	font-size: 1.2em;
+    line-height:1em;
+    position:relative;
+    top: 80px;
+    left:1.5%;
+    bottom:20px;
+    z-index:2;
+}
+
+div.winner p{
+	line-height: 0em;
+    padding-top: 1.7em;
+}
+
+div.winner .congrats{
+	font-size:1.3em;
+}
+
+div.loser{
+	display:none;
+	background:rgb(85, 56, 11);
+    color: #FFFFFF;
+	width:260px;
+	height:90px;
+	margin:0 auto;
+	border-radius:10px;
+	font-size: 1.4em;
+    line-height: 2em;
+    text-align: center;
+    position:relative;
+    top:80px;
+    left:1.5%;
+    bottom:125px;
+    z-index:1;
+}
+
+input.try_again{
+	background:rgb(219, 202, 160);
+	color:#C06616;
+	width: 14%;
+    height: 50px;
+	border-radius:10px;
+	text-align:center;
+	font-size: 1.6em;
+    line-height:1em;
+    position:relative;
+    top: 100px;
+    left: 44.5%;
+    bottom:20px;
+    z-index:0;
+    border:none;
+    display:none;
+}
+
+input.try_again:hover{
+	background:#4B3827;
+	color:rgb(218, 183, 94);
+}
+
+section.balls_display{
+	width:30%;
+	height:70px;
+	margin:auto;
+    position: relative;
+    top:90px;
+    left:1.6%;
+}
+
+div.balls{
+	background-image:url('/Users/Edgar/Desktop/smaller.png');
+	width:70px;
+	height:70px;
+	margin-right:2.1%;
+	border:0;
+	float:left;
+    display:none;
+}
+
+div.balls2{
+	background-image:url('/Users/Edgar/Desktop/smaller.png');
+	width:70px;
+	height:70px;
+	margin-right:2.1%;
+	border:0;
+	float:left;
+    display:none;
+}
+
+div.balls3{
+	background-image:url('/Users/Edgar/Desktop/smaller.png');
+	width:70px;
+	height:70px;
+	margin-right:2.1%;
+	border:0;
+	float:left;
+	display:none;
+}
+
+div.balls4{
+	background-image:url('/Users/Edgar/Desktop/smaller.png');
+	width:70px;
+	height:70px;
+	margin-right:2.1%;
+	border:0;
+	float:left;
+	display:none;
+}
+
+div.balls5{
+	background-image:url('/Users/Edgar/Desktop/smaller.png');
+	width:70px;
+	height:70px;
+	margin-right:2.1%;
+	border:0;
+	float:left;
+	display:none;
+}
+
+span{
+	color:orange;
+}
